@@ -16,12 +16,6 @@ parserOptions:
 plugins:
 - react
 rules:
-  indent:
-  - error
-  - tab
-  -
-    SwitchCase: 1
-    MemberExpression: 1
   quotes:
   - error
   - single

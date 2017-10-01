@@ -1,12 +1,7 @@
 {
   "name": "webpack-lab",
   "version": "1.0.0",
-  "dependencies": {
-    "react": "15.6.1",
-    "react-dom": "15.6.1"
-  },
   "devDependencies": {
-    "webpack": "^3.6.0",
     "babel-eslint": "7.2.3",
     "eslint": "3.19.0",
     "eslint-config-airbnb": "13.0.0",

@@ -15,45 +15,4 @@ Now you're ready to rumble!
 
 We will transpile react and postcss code in this lab. But webpack isn't limited to that, it can transpile angular, vuejs, sass, less etc as well.
 
-### 1. Transpile react
-
-If you look in the project folder there isn't much to be excited about right now.
-There is an index.html file which just says that react isn't loaded, some hello world react code in the app folder and an empty webpack config.
-
-If you haven't already, run npm i in this folder.
-
-Let's start coding!
-
-In **webpack.config.js**, add following
-```js
-module.exports = {
-  name: 'Client',
-  	devtool: 'source-map',
-  	resolve: {
-  		alias: {
-  			joi: 'joi-browser'
-  		}
-  	},
-  
-  	entry: [
-  		'babel-polyfill',
-  		APP_DIR,
-  	],
-  
-  	output: {
-  		path: BUILD_DIR,
-  		// We need [name] here for app.manifest.js and app.vendor.js
-  		filename: 'static/app.[name].js',
-  	},
-  
-  	module: {
-  		rules: [
-  			{
-  				test: /\.js$/,
-  				use: jsLoaders,
-  				exclude: /node_modules/,
-  			}
-  		],
-  	},
-}
-```
+1. [transpile-react](./transpile-react)
