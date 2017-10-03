@@ -3,7 +3,7 @@
 If you look in this folder there isn't much to be excited about right now.
 There is an index.html file which just says that react isn't loaded, some hello world react code in the app folder and 2 empty config files for babel and webpack.
 
-###Babel setup
+### Babel setup
 
 We will use babel to transpile our js and react code. So before we dig into webpack, let's start by setting up babel.
 
@@ -25,7 +25,7 @@ In .babelrc add following
 
 Env and stage-0 above pretty much means that we want the latest javascript features even those that isn't supported in any browser yet.
 
-###Webpack setup
+### Webpack setup
 
 In **webpack.config.js**, add following
 ```js
@@ -71,7 +71,7 @@ Lets add them by running following:
 2. npm i babel-core --save-dev
 3. npm i babel-loader --save-dev
 
-###Almost there!
+### Almost there!
 
 Now we just need a npm script to run our webpack code.<br>
 Add following to package.json
@@ -83,7 +83,7 @@ Add following to package.json
 
 Here we point out our webpack.config.js file with the --config option as well as making the output a bit prettier with the --colors option.
 
-###Lets try it out
+### Lets try it out
 
 Run "npm run build" in this folder.
 If you have followed the instructions correctly, you should hopefully see something like this:<br>
@@ -101,4 +101,4 @@ bundle.js.map  896 kB       0  [emitted]         main
 
 If you now open index.html, it should load our newly created bundle and display our HelloWorld react app!
 
-####Congrats, you have successfully transpiled react code with webpack! 
+##### Congrats, you have successfully transpiled react code with webpack! 
