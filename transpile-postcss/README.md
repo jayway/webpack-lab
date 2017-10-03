@@ -40,13 +40,17 @@ As you can see we also give the css loader some options. You might be wondering 
 
 #### Add our css/react code
 
-1. In the folder app/HelloWorld, add a file called HelloWorld.css.
-2. In the css file add a class called cool that does something.
-3. In the HelloWorld.js file, at the top add 
+1. In app/HelloWorld/HelloWorld.css add
+```css
+.cool {
+  color: chocolate;
+}
+```
+2. In the HelloWorld.js file, at the top add 
 ```javascript
 import styles from './HelloWorld.css';
 ```
-4. On the h1 tag add 
+3. On the h1 tag add 
 ````javascript
 className={ styles.cool }
 ````
@@ -54,8 +58,8 @@ className={ styles.cool }
 #### Lets try it out
 
 Run our webpack config with 'npm run build' and open the index.html file. <br>
-If you inspect the element you should see a class looking something like 'HelloWorld__cool--NqzBl'.
+If you inspect the element you should see a class looking something like **HelloWorld__cool--NqzBl**.
 
 ### Post css setup
 
-So css modules is good and all. But you probably want sass or something. I'm gonna use postcss in my example because its best in my opinion, but it's pretty much the same thing with less/sass.
+So css modules is cool and all. But you probably want sass or something like that. I'm gonna use postcss in my example because its best in my opinion, but the setup is pretty much the same thing with less/sass.
