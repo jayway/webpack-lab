@@ -8,10 +8,9 @@ There is an index.html file which just says that react isn't loaded, some hello 
 We will use babel to transpile our js and react code. So before we dig into webpack, let's start by setting up babel.
 
 Install babel deps by running following in this folder:
-1. npm i babel-core --save-dev
-2. npm i babel-preset-env --save-dev
-3. npm i babel-preset-stage-0 --save-dev
-4. npm i babel-preset-react --save-dev
+````text
+npm i --save-dev babel-core babel-preset-env babel-preset-stage-0 babel-preset-react
+````
 
 In .babelrc add following
 ```json
@@ -72,8 +71,9 @@ Lets go through what we have above.
 
 You might have realised that we are missing some dependencies, webpack and the babel-loader!<br>
 Lets add them by running following:
-1. npm i webpack --save-dev
-2. npm i babel-loader --save-dev
+````text
+npm i --save-dev webpack babel-loader
+````
 
 #### Almost there!
 
