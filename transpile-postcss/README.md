@@ -1,4 +1,4 @@
-## 1. Transpile postcss
+## Transpile postcss
 
 In this exercise we continue where we left of in transpile-react. Start by running 'npm install'.
 

@@ -1,4 +1,4 @@
-## 1. Transpile react
+## Transpile react
 
 If you look in this folder there isn't much to be excited about right now.
 There is an index.html file which just says that react isn't loaded, some hello world react code in the app folder and 2 empty config files for babel and webpack.
