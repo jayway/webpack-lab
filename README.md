@@ -11,8 +11,13 @@ In this lab you will get started with the basics of webpack 3 and maybe have tim
 
 Now you're ready to rumble!
 
-## Labs
+## Exercises
 
 We will transpile react and postcss code in this lab. But webpack isn't limited to that, it can transpile angular, vuejs, sass, less etc as well.
 
+I recommend that you do the exercises in order, but it isn't necessary since they are independent of each other.
+
+### Basic
+
 1. [transpile-react](./transpile-react)
+1. [transpile-postcss](./transpile-postcss)
