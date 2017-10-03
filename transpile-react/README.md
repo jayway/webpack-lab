@@ -1,9 +1,9 @@
-## Transpile react
+# Transpile react
 
 If you look in this folder there isn't much to be excited about right now.
 There is an index.html file which just says that react isn't loaded, some hello world react code in the app folder and 2 empty config files for babel and webpack.
 
-### Babel setup
+## Babel setup
 
 We will use babel to transpile our js and react code. So before we dig into webpack, let's start by setting up babel.
 
@@ -25,7 +25,7 @@ In .babelrc add following
 
 Env above means that we want the latest js standard (es2017), previously called "latest". Stage-0 means that we want all the proposed javascript features that isn't in the standard yet.
 
-### Webpack setup
+## Webpack setup
 
 In **webpack.config.js**, add following
 ```js
@@ -67,7 +67,7 @@ Lets go through what we have above.
     - **exclude** is the opposite from test, here we can be explicit about files that we don't want to transpile with this rule.
     - **use** is which loader we want to use.
 
-#### Missing dependencies
+### Missing dependencies
 
 You might have realised that we are missing some dependencies, webpack and the babel-loader!<br>
 Lets add them by running following:
@@ -75,7 +75,7 @@ Lets add them by running following:
 npm i --save-dev webpack babel-loader
 ````
 
-#### Almost there!
+### Almost there!
 
 Now we just need a npm script to run our webpack code.<br>
 Add following to package.json
@@ -87,7 +87,7 @@ Add following to package.json
 
 Here we point out our webpack.config.js file with the --config option as well as making the output a bit prettier with the --colors option.
 
-### Lets try it out
+## Lets try it out
 
 Run "npm run build" in this folder.
 If you have followed the instructions correctly, you should hopefully see something like this:<br/>
