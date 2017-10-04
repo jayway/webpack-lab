@@ -64,9 +64,11 @@ If you inspect the element you should see a class looking something like **Hello
 
 So css modules is cool and all. But you probably want sass or something like that. I'm gonna use postcss in my example because its best in my opinion, but the setup is pretty much the same thing with less/sass.
 
+The difference between postcss and for example sass is that with sass you get a full treasure chest while in postcss you handpick which treasures you want with postcss modules.
+
 ### Install postcss
 
-There is a lot of postcss modules and you can read more about them here: https://github.com/postcss/postcss. I'm gonna use **postcss-cssnext** and **postcss-nested** in this example so lets install those and the postcss-loader webpack needs as well.
+There is a lot of postcss modules and you can read more about them here: https://github.com/postcss/postcss. I'm gonna use **postcss-cssnext** and **postcss-nested** in this example so lets install those and the **postcss-loader** webpack needs as well.
 
 ```text
 npm i --save-dev postcss-cssnext postcss-nested postcss-loader
