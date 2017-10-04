@@ -106,3 +106,5 @@ bundle.js.map  896 kB       0  [emitted]         main
 If you now open index.html, it should load our newly created bundle and display our HelloWorld react app!
 
 ### Congrats, you have successfully transpiled react code with webpack! 
+
+## TODO: Extra, polyfill och decorators/class props
