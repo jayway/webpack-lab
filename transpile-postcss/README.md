@@ -66,7 +66,7 @@ So css modules is cool and all. But you probably want sass or something like tha
 
 ### Install postcss
 
-There is a lot of postcss modules and you can read more about them here: https://github.com/postcss/postcss. I'm gonna use 'cssnext' and 'nested' in this example so lets install those and the postcss-loader webpack needs as well.
+There is a lot of postcss modules and you can read more about them here: https://github.com/postcss/postcss. I'm gonna use **postcss-cssnext** and **postcss-nested** in this example so lets install those and the postcss-loader webpack needs as well.
 
 ```text
 npm i --save-dev postcss-cssnext postcss-nested postcss-loader
