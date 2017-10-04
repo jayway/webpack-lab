@@ -116,11 +116,11 @@ After the css-loader, add our postcss-loader:
 },
 ````
 
-The postcss-loader will automatically look for postcss.config.js just like babel looks for .babelrc.
+The postcss-loader will automatically look for ##postcss.config.js## just like babel-loader looks for .babelrc.
 
 ### Lets try it out!
 
-Change the extension of HelloWorld.css to .pcss and replace the content with:
+Change the extension of ##HelloWorld.css## to ##.pcss## and replace the content with:
 
 ```css
 :root {
@@ -136,9 +136,9 @@ Change the extension of HelloWorld.css to .pcss and replace the content with:
 }
 ```
 
-As you can see here, we use brandPrimary from the postcss.config.js file, which can be good since it is dynamic with js. We also have the css4 functionality to declare cariables in :root.
+As you can see here, we use brandPrimary from the ##postcss.config.js## file, which can be good since it is dynamic with js. We also have the css4 functionality to declare cariables in :root.
 
-In HelloWorld.js
+In ##HelloWorld.js##
 1. Update the import to .pcss
 2. Remove className on the h1 tag
 3. Add className={ styles.root } to the div
