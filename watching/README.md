@@ -56,7 +56,8 @@ Update 'use' un our js loader like this:
 ```javascript
 use: ['react-hot-loader', 'babel-loader'],
 ```
-We also need to add a plugin for HMR. 
+We also need to add a plugin for HMR.
+ 
 At the top of our config add:
 
 ```javascript
