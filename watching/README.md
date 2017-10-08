@@ -31,7 +31,7 @@ Webpack updates the web page through a socket, and this socket is run by webpack
 npm i webpack-dev-server --save-dev
 ````
 
-We also need a hot loader for react, so let's install that as well:
+We also need a hot loader for react (hmr is often called hot), so let's install that as well:
 
 ````text
 npm i react-hot-loader --save-dev
