@@ -15,7 +15,7 @@ In package.json add another script called watch that is the same as build but al
 },
 ```
 
-**That's it!** Run the watch script and try changing in the pcss and js files.
+**That's it!** Run the watch script and try changing in the pcss and js files. This will update your bundle and if you reload the browser you can see the result.
 
 ## Webpack-dev-server with HMR
 
