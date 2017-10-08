@@ -15,7 +15,8 @@ In package.json add another script called watch that is the same as build but al
 },
 ```
 
-**That's it!** Run the watch script and try changing in the pcss and js files. This will update your bundle and if you reload the browser you can see the result.
+**That's it!** Run the watch script and try changing in the pcss and js files. <br />
+This should rebuild your bundle and if you reload the browser you can see the result.
 
 ## Webpack-dev-server with HMR
 
@@ -119,4 +120,5 @@ In order to run our dev-server, let's add another npm script:
 "start": "node devServer.js"
 ```
 
-**That's it!** Run the start script and try changing in the pcss and js files. The browser should update without any reload! :)
+**That's it!** Run the start script and try changing in the pcss and js files. <br />
+The browser should update without any reload! :)
