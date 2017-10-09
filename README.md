@@ -39,7 +39,7 @@ Here is some examples of common plugins to give you an idea:
 
 3. CommonsChunkPlugin extract common modules shared between different bundles and puts them in a separate one (used for vendor bundle).
 
-You can read more about webpack and how it works [here](./transpile-react)
+You can read more about webpack and how it works [here](https://webpack.js.org/concepts/)
 
 ## Quick start
 
