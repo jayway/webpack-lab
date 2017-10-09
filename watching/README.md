@@ -26,7 +26,7 @@ Webpack has something called HMR (hot module replacement). With this enabled, yo
 
 ### NPM modules
 
-Webpack updates the web page through a socket, and this socket is run by webpack-dev-server, so lets start by installing that:
+Webpack HMR updates the web page by serving your bundles from memory (not file) through a socket. Keeping the bundles in memory and serving them through a socket is done by webpack-dev-server, so lets start by installing that:
 
 ````text
 npm i webpack-dev-server --save-dev
@@ -42,7 +42,7 @@ npm i react-hot-loader --save-dev
 
 In order to make webpack-dev-server work we need to update our webpack config a bit.
 
-Change entry to this 
+1. Change entry to this 
 
 ```javascript
 entry: [
@@ -52,12 +52,16 @@ entry: [
 ],
 ```
 
-Update 'use' un our js loader like this:
+Above basically means, run 'node_modules/webpack-dev-server/client/index.js' and pass 'http://localhost:8080' as a param.
+After that, run 'node_modules/webpack/hot/only-dev-server.js' and then lastly run our own src code.
+
+2.  Update 'use' in our js loader so that we include 'react-hot-loader' in order to make HMR work better with react:
 
 ```javascript
 use: ['react-hot-loader', 'babel-loader'],
 ```
-We also need to add a plugin for HMR.
+
+3. We also need to add a plugin for HMR.
  
 At the top of our config add:
 
@@ -102,9 +106,11 @@ new WebpackDevServer(webpack(config), {
   });
 ```
 
-In above code we import our webpack config and then append some extra options that we need for our dev-server. 
+In above code we import our webpack config and then add some extra webpack-dev-server options that we need for our dev-server. 
 
-The important parts here is **hot** which is the boolean for HMR and **publicPath**. publicPath is where our bundle will be available for the client. Since we set it as '/', let's update it index.html as well.
+Many of the webpack-dev-server options is the same as in the regular webpack.config, but in a more flat structure.
+
+The important parts in above code is **hot** which is the boolean for HMR and **publicPath**. publicPath is where our bundle will be available for the client. Since we set it as '/', let's update it index.html as well.
 
 Change:
 ```html
