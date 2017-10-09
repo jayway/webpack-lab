@@ -21,7 +21,7 @@ Webpack by itself only understands javascript. So, how does webpack transform al
 
 When webpack finds an imported asset, it will look for a loader that match the asset type through regexp (usually just file extension). The loader will then transform the asset to a module for webpack to use.
 
-So transforming assets to modules is good and all. But that's not the only thing we use the loaders for. We also use them to transpile our code as well. For example we can use the babel loader to transpile javascript in ES7 to ES5 or styling in LESS to CSS. Therefor is pretty much everyone using a js loader as well, even though webpack supports js.
+So transforming assets to modules is good and all, but that's not the only thing we use the loaders for. We also use them to transpile our code as well. For example we can use the babel loader to transpile javascript in ES7 to ES5 or styling in LESS to CSS. Therefor is pretty much everyone using a js loader as well, even though webpack supports js.
 
 ### Output
 
