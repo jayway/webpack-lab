@@ -3,6 +3,8 @@ Webpack is a highly configurable module bundler that also transpiles code with l
 
 In this lab you will get started with the basics of webpack 3 and maybe have time to learn some more advanced concepts as well.
 
+It is probably good (but might not be necessary) if you start of the lab by reading through 'How does webpack work' below. You can then move on to the exercises at the end. 
+
 ## How does webpack work?
 
 Webpack has 4 core concepts. Entry, loaders, output and plugins.
@@ -18,8 +20,6 @@ A module is a javascript concept but webpack "transforms" all assets to modules 
 Webpack by itself only understands javascript. So, how does webpack transform all assets to modules you might wonder, that's where the loaders come in. 
 
 When webpack finds an imported asset, it will look for a loader that match the asset type through regexp (usually just file extension). The loader will then transform the asset to a module for webpack to use.
-
-#### Transpiling
 
 So transforming assets to modules is good and all. But that's not the only thing we use the loaders for. We also use them to transpile our code as well. For example we can use the babel loader to transpile javascript in ES7 to ES5 or styling in LESS to CSS. Therefor is pretty much everyone using a js loader as well, even though webpack supports js.
 
@@ -54,8 +54,6 @@ Now you're ready to rumble!
 We will transpile react and postcss code in this lab. But webpack isn't limited to that, it can transpile angular, vuejs, sass, less etc as well.
 
 I recommend that you do the exercises in order, but it isn't necessary since they are independent of each other.
-
-### Basic
 
 1. [transpile-react](./transpile-react)
 1. [transpile-postcss](./transpile-postcss)
