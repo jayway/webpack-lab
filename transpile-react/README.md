@@ -3,6 +3,8 @@
 If you look in this folder there isn't much to be excited about right now.
 There is an index.html file which just says that react isn't loaded, some hello world react code in the app folder and 2 empty config files for babel and webpack.
 
+Before we dig into our config files and start coding, let's go through what babel is.
+
 ## What is babel?
 
 Babel is a compiler that transforms the latest js syntax to old ES5 which all browsers support. It does this with lots of different plugins that each take care of a specific transformation. There is for example an arrow function plugin and a constants plugin. 
