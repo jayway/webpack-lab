@@ -3,6 +3,14 @@
 If you look in this folder there isn't much to be excited about right now.
 There is an index.html file which just says that react isn't loaded, some hello world react code in the app folder and 2 empty config files for babel and webpack.
 
+## What is babel?
+
+Babel is a compiler that transforms the latest js syntax to old ES5 which all browsers support. It does this with lots of different plugins that each take care of a specific transformation. There is for example an arrow function plugin and a constants plugin. 
+
+It would however be very tedious to add all these plugins manually and babel therefor has something called presets. A preset is a collection of plugins with a common purpose. For example an ES6 preset would contain all plugins necessary to transform javascript in ES6 to ES5.
+
+Even though babels main purpose is to allow us to use the latest js syntax. It also has presets for common js libraries such as React, Angular and Vue.
+
 ## Babel setup
 
 We will use babel to transpile our js and react code. So before we dig into webpack, let's start by setting up babel.
