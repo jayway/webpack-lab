@@ -58,3 +58,4 @@ I recommend that you do the exercises in order, but it isn't necessary since the
 1. [transpile-react](./transpile-react)
 1. [transpile-postcss](./transpile-postcss)
 1. [watching](./watching)
+1. [resolvers](./resolvers)
