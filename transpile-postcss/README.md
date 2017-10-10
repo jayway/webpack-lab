@@ -68,7 +68,7 @@ The difference between postcss and for example sass is that with sass you get a 
 
 ### Install postcss
 
-There is a lot of postcss modules and you can read more about them here: https://github.com/postcss/postcss. I'm gonna use **postcss-cssnext** and **postcss-nested** in this example so lets install those and the **postcss-loader** webpack needs as well.
+There is a lot of postcss modules and you can read more about them [here](https://github.com/postcss/postcss). I'm gonna use **postcss-cssnext** and **postcss-nested** in this example so lets install those and the **postcss-loader** webpack needs as well.
 
 ```text
 npm i --save-dev postcss-cssnext postcss-nested postcss-loader
