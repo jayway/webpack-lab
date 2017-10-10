@@ -65,7 +65,16 @@ module.exports = {
 ```
 Lets go through what we have above.
 
-1. **devtool** is pretty much if we want to have a slower build with source maps or a faster one without it ('eval' for fast build).
+1. **devtool** is pretty much if we want to have a slower build with source maps or a faster one without it. I think the 3 most common values here is 'eval', 'source-map' and 'eval-source-map'.
+
+    - With 'eval' you only see the generated code bundle when inspecting with dev-tools for example.
+    - With 'source-map' you can see the original source code.
+    - With 'eval-source-map' you can also see the original source code, but rebuilds (with watching) are faster. 
+    
+    I personally never use 'eval' because the time won in faster builds is by far lost on extra time spent on debugging instead (it is really hard to debug without source maps). <br />
+    'eval-source-map' is probably the best option, it does however not work well with some loaders so I usually end up with just 'source-map' instead.
+    
+    You can read more about source maps and webpack devtool [here](https://webpack.js.org/configuration/devtool/)
 
 2. **entry** is like it sounds, the first file that webpack will start looking at when doing its magic.
 
