@@ -4,7 +4,7 @@ Webpack has some resolvers that makes our life a lot easier when importing modul
 
 I have made the folder structure in this exercise look a bit more like a real project in order to show the point with resolvers.
 
-In the root folder we now have the folders server (made up node server) and shared. Shared contains constants and validators that is used both in the node server and the react app.
+In the root folder we now also have the folders server (made up node server) and shared. Shared contains constants and validators that is used both in the node server and the react app.
 
 ## Update webpack
 
