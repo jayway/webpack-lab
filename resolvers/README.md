@@ -30,7 +30,7 @@ resolve: {
 },
 ```
 
-Above means that we can import modules directly from above folders. The reason we could import React directly from node_modules in earlier exercises is because webpack resolves node_modules with the default config like this:
+Above means that we can import modules directly from these folders. The reason we could import React directly from node_modules in earlier exercises is because webpack resolves node_modules with the default config like this:
 
 ```javascript
 resolve: {
