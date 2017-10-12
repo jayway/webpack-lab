@@ -33,19 +33,19 @@ Plugins is additional features you might want that isn't really transpiling/tran
 
 Here is some examples of common plugins to give you an idea:
 
-1. ExtractTextWebpackPlugin extracts all css modules to a separate css bundle.
+1. **ExtractTextWebpackPlugin** extracts all css modules to a separate css bundle.
 
-2. With the DefinePlugin we can set global variables that will be available through the whole app (often used for process.ENV in order to know if the app is build for develop or production).
+2. With the **DefinePlugin** we can set global variables that will be available through the whole app (often used for process.ENV in order to know if the app is build for develop or production).
 
-3. CommonsChunkPlugin extract common modules shared between different bundles and puts them in a separate one (used for vendor bundle).
+3. **CommonsChunkPlugin** extract common modules shared between different bundles and puts them in a separate one.
 
-You can read more about webpack and how it works <a href="https://webpack.js.org/concepts/" target="_blank">here</a>
+You can read more about webpack and how it works <a href="https://webpack.js.org/concepts/" target="_blank">here</a>.
 
 ## Quick start
 
-1. Install nodejs and npm if you haven't already
-2. Clone or download this repo
-3. Run npm install in this folder
+1. Install nodejs and npm if you haven't already.
+2. Clone or download this repo.
+3. Run npm install in this folder.
 
 Now you're ready to rumble!
 
