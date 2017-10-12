@@ -4,7 +4,10 @@ module.exports = {
   name: 'Client',
   devtool: 'source-map',
 
-  entry: './app/index.js',
+  entry: [
+    './app/HelloJayway/HelloJayway',
+    './app/HelloWorld/HelloWorld',
+  ],
 
   output: {
     path: path.resolve(__dirname, 'build'),
