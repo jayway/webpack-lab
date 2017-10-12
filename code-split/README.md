@@ -36,7 +36,7 @@ filename: '[name].js',
 
 In above code is **[name]** mapped to the object keys we have in entries. If you do npm run build now you should see something like this:
 
-```text
+```html
 Hash: ba89856ab6d6a8c9a87e
 Version: webpack 3.7.1
 Time: 1869ms
@@ -96,7 +96,7 @@ The reason we want to separate the webpack code is because if we have a watcher 
 
 If you run npm run build you should get something like this:
 
-```javascript
+```html
 Hash: 94a8f172d84ed0310f9e
 Version: webpack 3.7.1
 Time: 1955ms
