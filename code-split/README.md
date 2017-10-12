@@ -94,7 +94,7 @@ In **manifest** we just leave it at default. This means that it will take all co
 
 The reason we want to separate the webpack code is because if we have a watcher and change our app code, the vendor bundle will be rebuilt as well because the webpack code changes.
 
-If you run npm run build you should get something like this:
+If you do npm run build you should get something like this:
 
 ```html
 Hash: 94a8f172d84ed0310f9e
@@ -115,6 +115,7 @@ manifest.js.map    5.89 kB       3  [emitted]         manifest
 ```
 
 Let's update index.html to try it out.
+
 Change:
 ```html
 <script src="build/world.js"></script>
