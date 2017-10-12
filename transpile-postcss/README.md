@@ -150,5 +150,3 @@ Build webpack, open index.html and confirm that the new colors work.
 #### That's it!
 
 I know that the result is kinda boring... But feel free to mess around with the css and different postcss modules :)
-
-## TODO: add import support

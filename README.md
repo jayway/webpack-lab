@@ -1,7 +1,7 @@
 # Getting started with Webpack 3!
 Webpack is a highly configurable module bundler that also transpiles code with loaders and plugins.
 
-In this lab you will get started with the basics of webpack 3 and maybe have time to learn some more advanced concepts as well.
+In this lab you will get started with the basics of webpack 3 and maybe have time to lab with some more advanced concepts as well.
 
 It is probably good (but might not be necessary) if you start of the lab by reading through 'How does webpack work' below. You can then move on to the exercises at the end. 
 

@@ -20,7 +20,7 @@ This should rebuild your bundle and if you reload the browser you can see the re
 
 ## Webpack-dev-server with HMR
 
-So, watching is good and all, but it's still kinda annoying to reload the browser, so let's fix that.
+So, watching is good and all, but it's still a bit annoying to reload the browser, so let's fix that as well.
 
 Webpack has something called HMR (hot module replacement). With this enabled, your web page will be updated live, without any page reload. You might still have to reload the page if you need to reset the js state in a redux store for example, but for styling it's perfect.
 
