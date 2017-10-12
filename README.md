@@ -63,7 +63,7 @@ Start every exercise by running **npm i** in the exercise folder.
 1. [watching](./watching)
 1. [resolvers](./resolvers)
 
-Challenges:
+## Challenges
 
 1. Use [file-loader](https://github.com/webpack-contrib/file-loader) to load images.
 1. Minify code with a production build, [webpack-guide](https://webpack.js.org/guides/production/).
@@ -71,7 +71,7 @@ Challenges:
 1. Try lazy-loading, [webpack-guide](https://webpack.js.org/guides/lazy-loading/).
 
 
-Additional recommended links:
+## Additional recommended links
 
 1. [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer) is an amazingly easy tool that let's you see which modules your bundle contains and how big they are. Very good for optimization.
 
