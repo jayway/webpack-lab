@@ -58,6 +58,7 @@ I recommend that you do the exercises in order, but it isn't necessary since the
 Start every exercise by running **npm i** in the exercise folder.
 
 1. [transpile-react](./transpile-react)
+1. [code-split](./code-split)
 1. [transpile-postcss](./transpile-postcss)
 1. [watching](./watching)
 1. [resolvers](./resolvers)
