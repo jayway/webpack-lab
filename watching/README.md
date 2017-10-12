@@ -48,17 +48,18 @@ In order to make webpack-dev-server work we need to update our webpack config a 
 entry: [
   'webpack-dev-server/client?http://localhost:8080',
   'webpack/hot/only-dev-server',
+  'react-hot-loader/patch',
   './app/index.js',
 ],
 ```
 
 Above basically means, run 'node_modules/webpack-dev-server/client/index.js' and pass 'http://localhost:8080' as a param.
-After that, run 'node_modules/webpack/hot/only-dev-server.js' and then lastly run our own src code.
+After that, run 'node_modules/webpack/hot/only-dev-server.js', then run 'node_modules/react-hot-loader/patch.js' and lastly run our own src code.
 
-2.  Update 'use' in our js loader so that we include 'react-hot-loader' in order to make HMR work better with react:
+2.  Update .babelr to include react-hot-loader by adding following in the root:
 
-```javascript
-use: ['react-hot-loader', 'babel-loader'],
+```json
+"plugins": ["react-hot-loader/babel"]
 ```
 
 3. We also need to add a plugin for HMR.
@@ -76,6 +77,31 @@ plugins: [
   new webpack.HotModuleReplacementPlugin(),
 ]
 ```
+
+We need to update our index.js file a bit as well to include hmr, replace it with following:
+
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { AppContainer } from 'react-hot-loader';
+
+import HelloWorld from './HelloWorld/HelloWorld';
+
+ReactDOM.render(
+  <AppContainer>
+    <HelloWorld/>
+  </AppContainer>,
+  document.getElementById('root'),
+);
+
+// Webpack Hot Module Replacement API
+if (module.hot) {
+  module.hot.accept();
+}
+```
+
+In above we have wrapped HelloWorld in **AppContainer** to make hmr work with react. <br />
+At the end we have also added **module.hot.accept();** which tells webpack that it is okay to replace modules with hmr.
 
 ### Dev server
 
