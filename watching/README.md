@@ -56,13 +56,13 @@ entry: [
 Above basically means, run 'node_modules/webpack-dev-server/client/index.js' and pass 'http://localhost:8080' as a param.
 After that, run 'node_modules/webpack/hot/only-dev-server.js', then run 'node_modules/react-hot-loader/patch.js' and lastly run our own src code.
 
-2.  Update .babelr to include react-hot-loader by adding following in the root:
+2.  Update **.babelr** to include react-hot-loader by adding following in the root:
 
 ```json
 "plugins": ["react-hot-loader/babel"]
 ```
 
-3. We also need to add a plugin for HMR.
+3. We also need to add a webpack plugin for HMR.
  
 At the top of our config add:
 
@@ -78,7 +78,7 @@ plugins: [
 ]
 ```
 
-We need to update our index.js file a bit as well to include hmr, replace it with following:
+We need to update our **index.js** file a bit as well to include hmr, replace it with following:
 
 ```javascript
 import React from 'react';

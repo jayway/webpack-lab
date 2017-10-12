@@ -55,6 +55,8 @@ We will transpile react and postcss code in this lab. But webpack isn't limited 
 
 I recommend that you do the exercises in order, but it isn't necessary since they are independent of each other.
 
+Start every exercise by running **npm i** in the exercise folder.
+
 1. [transpile-react](./transpile-react)
 1. [transpile-postcss](./transpile-postcss)
 1. [watching](./watching)

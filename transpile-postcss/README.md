@@ -1,6 +1,6 @@
 # Transpile postcss
 
-In this exercise we continue where we left of in transpile-react. Start by running 'npm install'.
+In this exercise we continue where we left of in transpile-react.
 
 ## Css modules setup
 
