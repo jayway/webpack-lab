@@ -75,4 +75,4 @@ Start every exercise by running "**npm i**" in the exercise folder.
 
 1. [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer) is an amazingly easy tool that let's you see which modules your bundle contains and how big they are. Very good for optimization.
 
-1. In a bigger project you will most likely want to split up your webpack configs into different builds and/or client/server. [webpack-merge](https://github.com/survivejs/webpack-merge) let's you merge for example an 'common' config to both the develop and production build in a pain free way.
+1. In a bigger project you will most likely want to split up your webpack configs into different builds and/or client/server. [webpack-merge](https://github.com/survivejs/webpack-merge) let's you merge for example a **common** config to both the develop and production builds in a pain free way.
