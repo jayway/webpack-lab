@@ -103,6 +103,16 @@ if (module.hot) {
 In above we have wrapped HelloWorld in **AppContainer** to make hmr work with react. <br />
 At the end we have also added **module.hot.accept();** which tells webpack that it is okay to replace modules with hmr.
 
+You can read more about HMR in react [here](https://github.com/gaearon/react-hot-loader) and about HMR in webpack [here](https://webpack.js.org/guides/hot-module-replacement/#enabling-hmr).
+
+There is HMR modules for angular 2+ and vue as well, but I don't know how good they work. You can also control exactly what should happen when a module changes with this syntax:
+
+```javascript
+module.hot.accept('./foo.js', () => {
+  // if foo.js changes, do something
+})
+```
+
 ### Dev server
 
 Create a new file called 'devServer.js' in this folder with following content:
